@@ -5,6 +5,10 @@ inputs:
 runs:
   using: "composite"
   steps: 
+    - name: checkout
+      uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
     - run: echo Hello ${{ inputs.name }}.
       shell: bash
     - run: echo "Nice to meet you another action on the branch!"
