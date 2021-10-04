@@ -5,7 +5,13 @@ inputs:
 runs:
   using: "composite"
   steps: 
+    - uses: actions/checkout@a81bbbf8298c0fa03ea29cdc473d45769f953675
+    - uses: actions/checkout@v2
     - run: echo Hello ${{ inputs.name }}.
       shell: bash
     - run: echo "Nice to meet you another action on the branch!"
       shell: pwsh
+
+    # and run steps!
+    - run: echo "hello world"
+      shell: bash  
