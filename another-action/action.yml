@@ -5,7 +5,7 @@ inputs:
 runs:
   using: "composite"
   steps: 
-    - uses: actions/checkout@a81bbbf8298c0fa03ea29cdc473d45769f953675
+    # - uses: actions/checkout@a81bbbf8298c0fa03ea29cdc473d45769f953675
     - uses: actions/checkout@v2
     - run: echo Hello ${{ inputs.name }}.
       shell: bash
@@ -13,5 +13,5 @@ runs:
       shell: pwsh
 
     # and run steps!
-    - run: echo "hello world"
+    - run: echo "hello world 1111"
       shell: bash  
